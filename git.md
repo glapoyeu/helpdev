@@ -1,6 +1,5 @@
 # Add folder local to remte repository
 ## Initialize Git on directory
-
 ```
 $ git init  
 ```
