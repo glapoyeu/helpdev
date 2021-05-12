@@ -10,6 +10,9 @@ docker run -d -p 3000:3000 -v C:\televida\local-environment\nosql\data_nosql:/da
 ## Dockeer build image
 docker build -t televida-activemq:5.9.0 .
 
+## Docker rebuild image
+docker build -t --force-rm televida-tomcat:9.0.36 .
+
 ## Rebuild container
 docker-compose up -d --force-recreate --no-deps --build container
 
