@@ -75,3 +75,17 @@ If you'd like to learn about Git make sure to check the following articles:
 
 - Push identical code into two git remote repositories
 - How to git revert a commit
+
+## 1201 / 5000
+Resultados de traducción
+¿Por qué Git no ignora mi archivo especificado?  
+
+Asegúrese de que su .gitignore esté en la raíz del directorio de trabajo, y en ese directorio ejecute git status y copie la ruta al archivo desde la salida de estado y péguelo en .gitignore.  
+
+Si eso no funciona, es probable que Git ya haya rastreado tu archivo. Puede confirmar esto a través de la salida de git status. Si el archivo no aparece en la sección "Archivos sin seguimiento", Git ya lo rastrea e ignorará la regla del archivo .gitignore.  
+
+La razón para ignorar los archivos en Git es para que no se agreguen al repositorio. Si anteriormente agregó un archivo que desea que se ignore, Git lo rastreará y se omitirán las reglas de ignorar que coincidan con él. Git hace esto porque el archivo ya es parte del repositorio.  
+
+Para ignorar realmente el archivo, debe desbloquearlo y eliminarlo del repositorio. Puedes hacerlo usando git rm --cached sites / default / settings.php. Esto elimina el archivo del repositorio sin eliminarlo físicamente (eso es lo que hace --cached). Después de realizar ese cambio, el archivo se eliminará del repositorio e ignorarlo debería funcionar correctamente.   
+
+
