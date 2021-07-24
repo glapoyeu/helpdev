@@ -200,4 +200,28 @@ At the time of the writing of this article, the currently supported filters are 
 
 For example, to remove all networks that are created more than 12 hours ago, run:
 
-docker network prune -a --filter "until=12h"
+docker network prune -a --filter "until=12h"  
+
+## How to install additional software in the containers
+docker-compose exec httpd /bin/bash -c "apt-get update && apt-get -y install nano"
+docker-compose exec php /bin/bash -c "sudo yum -y install nano"  
+
+## Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysqld.sock’ (2)” error in Docker ?
+If you happen to get “Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysqld.sock’ (2)” errors in logging in to mysql-server while working on docker containers:
+
+    check the path of socket file in /etc/mysql/my.cnf
+
+    check if mysqld.sock and mysqld.pid file is present in /var/run/mysqld/ directory or not.
+
+    If not, create these files as:
+	
+touch /var/run/mysqld/mysqld.sock
+touch /var/run/mysqld/mysqld.pid
+chown -R mysql:mysql /var/run/mysqld/mysqld.sock
+chown -R mysql:mysql /var/run/mysqld/mysqld.sock
+chmod -R 644 /var/run/mysqld/mysqld.sock
+
+Now restart the mysql-server as:
+service mysql-server restart
+Now, trying logging again in to mysql-server.
+
