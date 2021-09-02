@@ -225,3 +225,15 @@ Now restart the mysql-server as:
 service mysql-server restart
 Now, trying logging again in to mysql-server.
 
+## Docker compose 
+### Lamp
+https://github.com/sprintcube/docker-compose-lamp
+
+
+
+
+
+
+
+
+
