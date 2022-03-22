@@ -11,3 +11,9 @@ mvn package
 ## Run a jar
  java -jar project.jar
 
+
+# How to properly remove a dependency in a Maven project
+mvn dependency:purge-local-repository  
+or  
+mvn dependency:purge-local-repository -DreResolve=false
+
