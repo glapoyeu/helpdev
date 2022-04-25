@@ -89,3 +89,7 @@ La razón para ignorar los archivos en Git es para que no se agreguen al reposit
 Para ignorar realmente el archivo, debe desbloquearlo y eliminarlo del repositorio. Puedes hacerlo usando git rm --cached sites / default / settings.php. Esto elimina el archivo del repositorio sin eliminarlo físicamente (eso es lo que hace --cached). Después de realizar ese cambio, el archivo se eliminará del repositorio e ignorarlo debería funcionar correctamente.   
 
 
+## Finding out the name of the original repository you cloned from in Git
+```
+git config --get remote.origin.url
+```
