@@ -31,7 +31,7 @@ conexion.close();
 
 ## apache dbcp : BasicDataSource
 
-En la librería de *apache commons-dbcp* tenemos una implementación sencilla de un pool de conexiones. Esta librería necesita a su vez la librería [commons-pool(https://commons.apache.org/proper/commons-pool/downloads.html)], por lo que debemos descargarnos también esta. Una vez descargadas esas dos librerías y el driver de nuestra base de datos [mysql-connector-java-5.1.6.jar](https://dev.mysql.com/downloads/connector/j/5.1.html) para nuestro ejemplo, debemos añadir todas ellas como dependencias de nuestro proyecto o al [CLASSPATH](classpath.md) del mismo.
+En la librería de *apache commons-dbcp* tenemos una implementación sencilla de un pool de conexiones. Esta librería necesita a su vez la librería [commons-pool](https://commons.apache.org/proper/commons-pool/downloads.html), por lo que debemos descargarnos también esta. Una vez descargadas esas dos librerías y el driver de nuestra base de datos [mysql-connector-java-5.1.6.jar](https://dev.mysql.com/downloads/connector/j/5.1.html) para nuestro ejemplo, debemos añadir todas ellas como dependencias de nuestro proyecto o al [CLASSPATH](classpath.md) del mismo.
 
 Una vez configurado todo, para usar BasicDataSource no tenemos más que hacer un new de esa clase y pasarle los parámetros adecuados de nuestra conexión con los métodos set() disponibles para ello. El siguiente trozo de código muestra cómo hacerlo
 
