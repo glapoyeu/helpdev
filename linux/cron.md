@@ -11,6 +11,15 @@
 7. Save your file,
 8. Recheck with crontab -l
 
+## Log
+```
+tail -fn200 /var/log/cron
+
+
+less /var/log/cron | grep "busqueda"
+
+```
+
 # Manual básico de CRON
 Esta es una introducción a cron, cubre lo básico de lo que cron puede hacer y la manera de usarse.
 
@@ -251,6 +260,7 @@ o para agregar un usuario mas a cron.allow
 Si no existe el archivo cron.allow ni el archivo cron.deny, en teoría el uso de cron esta entonces sin restricciones de usuario. Si se añaden nombres de usuarios en cron.allow, sin crear un archivo cron.deny, tendrá el mismo efecto que haberlo creado con la palabra ALL. Esto quiere decir que una vez creado cron.allow con un solo usuario, siempre se tendrán que especificar los demás usuarios que se quiere usen cron, en este archivo.
 
 Espero que este pequeño manual sobre cron te sea de utilidad.
+
 
 ## Agradecimiento
 - [linuxtotal](https://www.linuxtotal.com.mx/?cont=info_admon_006)
