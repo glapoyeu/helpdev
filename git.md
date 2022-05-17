@@ -93,3 +93,6 @@ Para ignorar realmente el archivo, debe desbloquearlo y eliminarlo del repositor
 ```
 git config --get remote.origin.url
 ```
+
+## Store credentials
+git config --global credential.helper store
