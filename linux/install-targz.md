@@ -29,3 +29,5 @@ cd archive-name
 make
 sudo make install
 ```
+
+[Inidce](README.md)

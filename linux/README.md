@@ -4,3 +4,4 @@
 - ## [Manual básico de CRON](cron.md)
 - ## [Entendiendo los servicios en Linux](service.md)
 - ## [how to install tar.gz](install-targz.md)
+- ## [How to Install RPM Packages on Ubuntu](install-rpm-package.md)
