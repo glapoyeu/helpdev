@@ -17,3 +17,11 @@ mvn dependency:purge-local-repository
 or  
 mvn dependency:purge-local-repository -DreResolve=false
 
+## Instalar una dependencia manualmente
+```
+mvn dependency:purge-local-repository -DmanualInclude="my.group.id" -DsnapshotsOnly=true  -DactTransitively=false -DreResolve=false
+```
+```
+mvn install:install-file -Dfile=mimepull-1.9.3.jar -DgroupId=org.jvnet.mimepull -DartifactId=mimepull -Dversion=1.9.3 -Dpackaging=jar
+```
+
