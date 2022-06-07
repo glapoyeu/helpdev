@@ -96,3 +96,29 @@ git config --get remote.origin.url
 
 ## Store credentials
 git config --global credential.helper store
+
+## Errors
+
+### Git error: "Please make sure you have the correct access rights and the repository exists"
+
+I am using TortoiseGit on Windows. When I am trying to Clone from the context menu of the standard Windows Explorer, I get this error:
+
+    Please make sure you have the correct access rights and the repository exists
+
+More precisely, the snapshot of terminal is the following:
+
+Your git URL might have changed. Change the URL in the local directory by using the following command
+
+for https protocol
+
+```
+git remote set-url origin https://github.com/username/repository.git
+```
+
+for ssh protocol
+
+```
+git remote set-url origin git@github.com:username/repository.git
+```
+
+there might be multiple causes for the issue
