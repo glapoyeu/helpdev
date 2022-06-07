@@ -64,3 +64,10 @@ Aunque parezca mentira, el comando que debemos utilizar para esto es **grep**. U
 Para que se entienda fácil, explicamos que significa cada uno de los elementos del comando. «-r» indica que se debe realizar de forma recursiva en todos los subdirectorios contenidos en la ubicación proporcionada. «-i» permite omitir las mayúscula y minúsculas, haciendo que la búsqueda sea mucho más sencilla. «palabra o palabras» es el texto que queremos probar. «/home/redeszone» es la ruta sobre la que se realizará la búsqueda.
 
 Tal y como se puede observar, buscar archivos y contenido dentro de los mismos no es un problema, y con find y grep podemos encontrar los archivos o aquellos que contienen el texto que deseamos.
+
+## As the output of grep is buffered, use --line-buffered option of grep to enable line buffering:
+    tail -f /path/to/log | grep --line-buffered 'X' | grep -v 'Y'
+
+If your grep does not have the option, you can use stdbuf as an alternative:
+
+    tail -f /path/to/log | stdbuf -oL grep 'X' | grep -v 'Y'
