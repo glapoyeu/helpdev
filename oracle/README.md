@@ -1,5 +1,6 @@
 # Indice - MYSQL
 - ## [ORACLE: unlock user ](unlock-user.md)
+- ## [ORACLE: drop user ](drop-user.md)
 
 
 ### Docker

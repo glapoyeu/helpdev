@@ -23,3 +23,22 @@ ALTER USER user_name IDENTIFIED BY new_password;
 ```
 
     Note:If you unlock an account but do not reset the password, then the password remains expired. The first time someone connects as that user, they must change the user's password. 
+
+
+One of the reasons of your problem could be the password policy you are using.
+
+And if there is no such policy of yours then check your settings for the password properties in the DEFAULT profile with the following query:
+
+```
+SELECT resource_name, limit
+FROM dba_profiles 
+WHERE profile = 'DEFAULT'
+AND resource_type = 'PASSWORD';
+```
+
+And If required, you just need to change the PASSWORD_LIFE_TIME to unlimited with the following query:
+
+```
+ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
+
+```
