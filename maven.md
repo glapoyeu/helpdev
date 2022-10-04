@@ -35,3 +35,20 @@ find ~/.m2 -amin +5 -iname '*.pom' | while read pom; do parent=`dirname "$pom"`;
 This will find all *.pom files which have last been accessed more than 5 minutes ago (assuming you started your builds max 5 minutes ago) and delete their directories.
 
 Add "echo " before the rm to do a 'dry-run'.
+
+## maven command line how to point to a specific settings.xml for a single command?
+Is it possible to point to a specific settings file in order to override the default settings.xml being used by maven for a single command? Example:
+
+```
+mvn clean install -Dparam # -> pass specific settings file path as param to override default "home/.m2/settings.xml"
+```
+
+You can simply use:
+```
+mvn --settings YourOwnSettings.xml clean install
+```
+
+or
+```
+mvn -s YourOwnSettings.xml clean install
+```
