@@ -1,6 +1,7 @@
 # Indice - MYSQL
 - ## [ORACLE: unlock user ](unlock-user.md)
 - ## [ORACLE: drop user ](drop-user.md)
+- ## [ORACLE: Errores ](error/README.md)
 
 
 ### Docker
