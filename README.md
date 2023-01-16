@@ -114,3 +114,44 @@ Content in the first column | Content in the second column
 # More
 
 - [Tables Generator](https://www.tablesgenerator.com/)
+
+# 5 repositorios de GitHub para pasar de Junior a Senior:
+## 1. El Arte de la Terminal  
+Guía en Español para dominar la línea de comandos.  
+
+Todos los conceptos, trucos y comandos que debes dominar.  
+Los mejores "one-liners" que debes aprender.  
+Con categorías específicas para Windows y macOS.  
+
+[El arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md)  
+
+## 2. Awesome Design Patterns
+Lista de recursos para aprender y mejorar en arquitectura de software y patrones de diseño.  
+
+Escalar una arquitectura en el cloud  
+Desplegar contenedores con Kubernetes  
+Micro servicios y sistemas distribuidos  
+
+Lo tiene todo:  
+[Awesome Software and Architectural Design Patterns](https://github.com/DovAmir/awesome-design-patterns)
+
+## 3. Lo que todo programador debería saber
+Repositorio con una colección de artículos técnicos con conocimiento que todo programador debería saber.  
+Algoritmos, estructuras de datos, latencia, sistemas distribuidos, RegExp, SEO, Arquitectura:  
+[Every Programmer Should Know thinking](https://github.com/mtdvio/every-programmer-should-know)
+
+## 4. Build your Own X
+Aprende a desarrollar casi cualquier cosa.  
+Sistemas operativos, drivers, compiladores, bots, juegos, buscadores...  
+No importa lo que quieras programar, en este repositorio tienen una guía para que lo aprendas.  
+[Build your own X](https://github.com/codecrafters-io/build-your-own-x)
+
+## 5. Preguntas de entrevista de React
+Colección de 100 preguntas típicas de React, con explicaciones concisas pero detalladas.  
+Con ejemplos de código.  
+Perfecto para terminar de dominar la biblioteca del FrontEnd más usada.  
+[Preguntas de entrevista para React](https://github.com/midudev/preguntas-entrevista-react)
+
+Estos repositorios te pueden ayudar a seguir creciendo para llegar a ser Senior.  
+Pero recuerda que para llegar ahí también se necesita paciencia y tiempo.  
+La experiencia no se lee, se vive. Y eso es lo que marca la diferencia para lograrlo. :)  
