@@ -31,3 +31,15 @@ Where netstat command options are:
     -A INPUT -p tcp -m state --state NEW -m tcp --dport 8000 -j ACCEPT
 ```
 
+## Ver servicios corriendo en un puerto
+```
+[root@My Server]#  netstat -nlp | grep :9092
+tcp6      51      0 :::9092                 :::*                    LISTEN      29849/java
+[root@My Server]#  netstat -tulnp | grep :9092
+tcp6      51      0 :::9092                 :::*                    LISTEN      29849/java
+[root@My Server]# netstat -tulpn | grep :9092
+tcp6      51      0 :::9092                 :::*                    LISTEN      29849/java
+[root@My Server]# ps -aufx | grep 29849
+root      4292  0.0  0.0 112640   968 pts/0    S+   15:42   0:00                          \_ grep --color=auto 29849
+root     29849  0.4  1.6 5997988 725468 ?      Sl   Apr11 1018:51 /bin/java -Xmx256M -Djetty.logging.dir=/opt/WSAPICommons/jetty-9.3.6/logs -Djetty.home=/opt/WSAPICommons/jetty-9.3.6 -Djetty.base=/opt/WSAPICommons/jetty-9.3.6 -Djava.io.tmpdir=/tmp -jar /opt/WSAPICommons/jetty-9.3.6/start.jar jetty.state=/opt/WSAPICommons/jetty-9.3.6/jetty.state jetty-logging.xml jetty-started.xml
+```
