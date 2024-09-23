@@ -51,3 +51,30 @@ mysql> SHOW GLOBAL VARIABLES LIKE 'local_infile';
 
 Quoted from this link: https://bugs.mysql.com/bug.php?id=91872
 
+
+## Error al intentar abrir o crear un modelo 
+```could not store document data locale::facet::S_create_c_locale name not valid workbench mysql error```
+### Solución
+
+After long days and no soluction for this problem... 
+
+I attempt to change my default language to english and.... He is live!
+
+Go to the works fine for me:
+
+1 - edit: /etc/locale.gen 
+Find and uncoment line like this: 
+#en_US.UTF-8 UTF-8
+
+Save end close file
+
+2 - run: sudo locale-gen
+Generating locales...
+  en_US.UTF-8... done
+  pt_BR.UTF-8... done
+Generation complete.
+
+3 - nope, is only this!!
+
+Mysql Workbench running without errors! I feel good!!
+
