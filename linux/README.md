@@ -9,3 +9,4 @@
 - ## [How to Unzip a Zip File in Linux [Beginner’s Tutorial]](unzip.md)
 - ## [Cómo buscar archivos y texto dentro de estos en una terminal Linux](buscar-texto-archivos.md)
 - ## [Cómo saber si un puerto esta en uso y como agregar un puerto con la terminal Linux](port-use-add-port.md)
+- ## [Problemas y soluciones de la instalación de arch linux](arch-linux-install-problems-and-solutions.md)

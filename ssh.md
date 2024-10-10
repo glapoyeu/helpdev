@@ -1,0 +1,2 @@
+# Links
+* [Solución al error: Unable to negotiate with port 22: no matching host key type found. Their offer: ssh-rsa](https://victorhckinthefreeworld.com/2022/02/07/solucion-al-error-unable-to-negotiate-with-port-22-no-matching-host-key-type-found-their-offer-ssh-rsa/)

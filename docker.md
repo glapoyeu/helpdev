@@ -569,3 +569,7 @@ The command above can help when you want to troubleshoot or perform tasks that r
 That is all for the docker exec command.
 
 We have discussed using docker exec to run commands in your running containers and spawn a shell session. Finally, we covered how to run commands as root using username and UID. 
+
+## links
+* [Docker-Compose Logs: How to View Log Output?](https://kodekloud.com/blog/docker-compose-logs/)
+* [Docker - library initialization failed - unable to allocate file descriptor table - out of memory](https://stackoverflow.com/questions/68776387/docker-library-initialization-failed-unable-to-allocate-file-descriptor-tabl)
