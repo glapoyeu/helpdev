@@ -71,3 +71,10 @@ try {
 ```
 
 Note that **I do not recommend the Option #2 at all**. Disabling the trust manager defeats some parts of SSL and makes you vulnerable to man in the middle attacks. Prefer Option #1 or, even better, have the server use a "real" certificate signed by a well known CA.
+
+# Create link symbolic
+sudo ln -s /opt/jdk1.8/bin/java /usr/bin/java
+java --version
+java -version
+eclipse
+sudo ln -s /usr/lib/jvm/default-runtime/bin/java /usr/bin/java22 
